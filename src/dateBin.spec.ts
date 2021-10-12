@@ -12,4 +12,7 @@ test('bin hour', () => {
   expect(
     dateBin(interval, new Date('2021-01-01T08:00:00'), origin).getTime()
   ).toBe(new Date('2021-01-01T08:00:00').getTime())
+  expect(
+    dateBin(interval, new Date('2020-01-01T08:30:00'), origin).getTime()
+  ).toBe(new Date('2020-01-01T08:00:00').getTime())
 })
