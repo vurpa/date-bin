@@ -7,7 +7,7 @@ function dateBin(interval: number, source: Date, origin: Date): Date {
   let delta = diff - (diff % interval);
 
   if (originTime > sourceTime)
-		delta -= interval;
+    delta -= interval;
 
   const result = originTime + delta
 
